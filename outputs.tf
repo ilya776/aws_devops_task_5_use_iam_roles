@@ -8,7 +8,8 @@ output "grafana_url" {
     sensitive = false
 }
 
+
 output "grafana_iam_role_arn" {
-    value = aws_iam_role.grafana.arn
+    value = aws_iam_role.t2_micro_role.arn
     sensitive = false
 }

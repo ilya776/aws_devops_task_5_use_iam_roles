@@ -58,7 +58,7 @@ if ($instance.change.after.user_data) {
 } else { 
     throw "`u{1F635} Unable to validate instance user data. Please make sure that you used parameter 'user_data' to pass the Grafana installation script to instance and try again. "
 }
-if ($instance.change.after.iam_instance_profile) { 
+if ($instance.change.after.iam_instance_profile) {
     Write-Output "`u{2705} Checking if instance profile is set for the instance - OK. "
 } else { 
     throw "`u{1F635} Unable to validate instance profile is beeing set on the instance. Please make sure that you used parameter 'iam_instance_profile' to set instance profile and try again. "
